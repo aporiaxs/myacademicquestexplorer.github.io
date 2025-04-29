@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Create Account - My Quest</title>
+</head>
+<body style="margin: 0; font-family: 'Poppins', sans-serif; background: linear-gradient(to right, #1742ff, #160b7a); display: flex; align-items: center; justify-content: center; height: 100vh; color: #333;">
+
+  <div style="background-color: white; padding: 40px 30px; border-radius: 15px; box-shadow: 0 8px 20px rgba(0,0,0,0.2); width: 100%; max-width: 400px; text-align: center;">
+    <h1 style="margin-bottom: 20px; color: #5A67D8;">Create Account</h1>
+
+    <form id="signup-form">
+      <input type="text" name="full_name" placeholder="Full Name" required style="width: 100%; padding: 12px; margin: 10px 0; border: 1px solid #ccc; border-radius: 8px; box-sizing: border-box;">
+      <input type="email" name="email" placeholder="Email" required style="width: 100%; padding: 12px; margin: 10px 0; border: 1px solid #ccc; border-radius: 8px; box-sizing: border-box;">
+      <input type="password" name="password" placeholder="Password" required style="width: 100%; padding: 12px; margin: 10px 0; border: 1px solid #ccc; border-radius: 8px; box-sizing: border-box;">
+      <button type="submit" style="width: 100%; padding: 12px; background-color: #0c1ba0; color: white; border: none; border-radius: 8px; font-size: 1em; cursor: pointer; margin-top: 15px; transition: background-color 0.3s ease;">Sign Up</button>
+    </form>
+
+    <div style="margin: 20px 0; font-size: 0.9em; color: #000000;">OR</div>
+
+    <a href="https://www.facebook.com/login/" target="_blank" style="display: block; margin-top: 10px; color: #001aff; font-weight: bold; text-decoration: none;">Sign up with Facebook</a>
+    <a href="https://accounts.google.com/signup" target="_blank" style="display: block; margin-top: 10px; color: #001aff; font-weight: bold; text-decoration: none;">Sign up with Google</a>
+
+    <a href="techniques.html" style="display: block; margin-top: 20px; color: #001aff; font-weight: bold; text-decoration: none;">Already have an account? Log in</a>
+    <a href="frontpage.html" style="display: block; margin-top: 10px; color: #001aff; font-weight: bold; text-decoration: none;">&larr; Back to Home</a>
+  </div>
+
+  <script>
+    document.getElementById('signup-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Account created successfully!');
+      window.location.href = 'site.html';
+    });
+  </script>
+
+</body>
+</html>
